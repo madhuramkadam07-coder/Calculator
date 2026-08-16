@@ -1,57 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartCalc</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="calculator">
 
-    <h1>SmartCalc</h1>
-
     <div class="display">
-        <span id="expression">Ready</span>
-        <strong id="result">0</strong>
+        <div id="expression">Ready</div>
+        <div id="result">0</div>
     </div>
 
     <div class="buttons">
         <button>AC</button>
         <button>⌫</button>
-        <button>%</button>
         <button>÷</button>
+        <button>×</button>
 
         <button>7</button>
         <button>8</button>
         <button>9</button>
-        <button>×</button>
+        <button>−</button>
 
         <button>4</button>
         <button>5</button>
         <button>6</button>
-        <button>−</button>
+        <button>+</button>
 
         <button>1</button>
         <button>2</button>
         <button>3</button>
-        <button>+</button>
+        <button>=</button>
 
         <button class="zero">0</button>
         <button>.</button>
-        <button>=</button>
     </div>
 
     <div class="history">
-        <h2>History</h2>
-        <p>No calculation history yet.</p>
+        <div class="history-head">
+            <h3>History</h3>
+            <button id="clearHistory">Clear</button>
+        </div>
+        <div id="historyList"></div>
     </div>
 
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
